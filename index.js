@@ -9,7 +9,7 @@ function fetchhouse() {
   .then(json => console.log(json));
 }
 function fetch5thbook() { 
-  fetch("https://anapioficeandfire.com/api/houses/378")
+  fetch("https://anapioficeandfire.com/api/")
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
