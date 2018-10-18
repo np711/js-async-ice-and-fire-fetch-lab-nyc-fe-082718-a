@@ -1,9 +1,14 @@
 function fetchBooks() { 
   fetch('https://anapioficeandfire.com/api/books')
   .then(resp => resp.json())
-  .then(json => renderBooks(json));
+  .then(json => console.log(json));
 }
 function fetchhouse() { 
+  fetch("https://anapioficeandfire.com/api/houses/378")
+  .then(resp => resp.json())
+  .then(json => console.log(json));
+}
+function fetch5thbook() { 
   fetch("https://anapioficeandfire.com/api/houses/378")
   .then(resp => resp.json())
   .then(json => console.log(json));
