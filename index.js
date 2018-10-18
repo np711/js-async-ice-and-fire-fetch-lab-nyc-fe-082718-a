@@ -3,18 +3,18 @@ function fetchBooks() {
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
-function fetchhouse() { 
+function fetchHouse() { 
   fetch("https://anapioficeandfire.com/api/houses/378")
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
-function fetch5thbooks() { 
+function fetch5thBooks() { 
   fetch("https://anapioficeandfire.com/api/books/5/")
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
-function fetchcharacter() { 
-  fetch("https://anapioficeandfire.com/api/books/5")
+function fetchCharacter() { 
+  fetch("https://anapioficeandfire.com/api/characters/1031")
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
@@ -28,6 +28,7 @@ function renderBooks(json) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetch5thbooks()
-  fetchhouses()
+  fetch5thBooks()
+  fetchHouses()
+  fetchCharacter()
 })
