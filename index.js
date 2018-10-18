@@ -4,7 +4,7 @@ function fetchBooks() {
   .then(json => console.log(json));
 }
 function fetchBooks() { 
-  fetch('https://anapioficeandfire.com/api/books')
+  fetch("https://www.anapioficeandfire.com/api/all the houses in Game of Thrones)
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
