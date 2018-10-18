@@ -29,4 +29,5 @@ function renderBooks(json) {
 
 document.addEventListener('DOMContentLoaded', function() {
   fetch5thbooks()
+  fetchhouses()
 })
