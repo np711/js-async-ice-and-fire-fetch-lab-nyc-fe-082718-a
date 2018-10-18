@@ -13,6 +13,11 @@ function fetch5thbook() {
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
+function fetchcharacter() { 
+  fetch("https://anapioficeandfire.com/api/books/5")
+  .then(resp => resp.json())
+  .then(json => console.log(json));
+}
 function renderBooks(json) {
   const main = document.querySelector('main')
   json.forEach(book => {
