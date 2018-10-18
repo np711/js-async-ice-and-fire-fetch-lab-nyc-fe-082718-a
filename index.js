@@ -4,7 +4,7 @@ function fetchBooks() {
   .then(json => console.log(json));
 }
 function fetchHouse() { 
-  fetch("https://anapioficeandfire.com/api/houses/378/")
+  fetch("https://anapioficeandfire.com/api/houses/")
   .then(resp => resp.json())
   .then(json => console.log(json));
 }
